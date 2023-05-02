@@ -94,11 +94,21 @@ button {
     background-color: #71afbb;
     color: white;
 }
+.returnTop {
+    text-align: right;
+    padding: 15px;
+}
 @media only screen and (max-width: 600px) { 
     .flexContainer {
         flex-direction: column;
     }
     .userResearch, .contentStrategy, .userInterface {
         width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-rows: 50% 50%;
     }
 }
