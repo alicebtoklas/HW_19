@@ -1,0 +1,104 @@
+header {
+    background-color: #afabcb;
+}
+body {
+    font-family: Raleway;
+}
+.topLogo {
+    display: inline-block;
+    width: 23%;
+    padding: 1%;
+}
+nav {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 70%;
+    padding: 1%;
+}
+.inlineBlock {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    color: purple;
+}
+.caseStudies, .mySkills {
+    padding: 15px;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+.researchImage img {
+    width: 100%;
+    height: auto;
+}
+.userResearch {
+    width: 30%;
+}
+.contentStrategy {
+    width: 30%;
+}
+.userInterface {
+    width: 30%;
+}
+.grid {
+    display: grid;
+}
+.caseStudiesImage img {
+    width: 100%;
+    height: auto;
+}
+.wellRead {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+.deptEd {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.allProjectsCenter {
+    margin-top: 8px;
+    text-align: center;
+}
+footer {
+        background-color: #afabcb;
+}
+.bottomLogo {
+    display: inline-block;
+    width: 23%;
+    padding: 1%;
+}
+.footerNav {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    padding: 10px;
+}
+button {
+    font-family: Raleway;
+}
+.caseStudiesButton {
+    background-color: #71afbb;
+    color: white;
+}
+@media only screen and (max-width: 600px) { 
+    .flexContainer {
+        flex-direction: column;
+    }
+    .userResearch, .contentStrategy, .userInterface {
+        width: 100%;
+    }
+}
