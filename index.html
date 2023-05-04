@@ -2,7 +2,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/index.js"></script>
         <title>Kellys Next Page</title>
     </head>
     <body>
@@ -55,22 +54,22 @@
         <h2>Case Studies</h2>
         <div class="grid">
             <div class="wellRead">
-                <div class="caseStudiesImage">
+                <div class="wellReadImage">
                 <img src="images/wellRead.png">
                 </div>
-            <div>
+            <div class="wellReadText">
                 <h3>WellRead</h3>
                 <p>A mobile app development based on qualitative user research that aims to connect readers with critically-acclaimed books through local community-based resources</p>
                 <button class="caseStudiesButton">Read more</button>
             </div>
             </div>
             <div class="deptEd">
-                <div>
+                <div class="deptEdText">
                     <h3>Department of Education Redesign</h3>
                     <p>A redesign of the Department of Education website based on usability issues and user tests, particularly around navigation and informaiton architecture</p>
                     <button class="caseStudiesButton">Read more</button>
                     </div>
-                    <div class="caseStudiesImage">
+                    <div class="deptEdImage">
                         <img src="images/DeptEd.png">
                     </div>
                 </div>
@@ -79,8 +78,10 @@
         <button class="allProjectsButton">View all case studies</button>
         </div>
     </section>
-    <div class="returnTop">
+    <div id="returnTop">
+    <a class="returnTop" href="#">
         Return to top of page
+    </a>
     </div>
     <footer>
         <div class="bottomLogo">
@@ -94,5 +95,7 @@
 </ul>
 </nav>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script src="js/index.js"></script>
     </body>
 </html>
