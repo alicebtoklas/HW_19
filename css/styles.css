@@ -49,41 +49,50 @@ h2 {
 .userInterface {
     width: 30%;
 }
-.grid {
-    display: grid;
-}
 .wellRead {
     display: grid;
     grid-template-columns: 25% 75%;
-    margin-right: 20px;
-    margin-left: 20px;
+    grid-template-rows: 1fr;
     align-content: start;
+    grid-template-areas: 
+    "wellReadImage wellReadText";
 }
 .wellReadImage img {
     width: 100%;
     height: auto;
 }
+.wellReadImage {
+    grid-area: wellReadImage;
+    grid-column-start: 1;
+}
 .wellReadText {
     padding-left: 20px;
+    grid-area: wellReadText;
+    grid-column-start: 2;
 }
 .deptEd {
     display: grid;
     grid-template-columns: 75% 25%;
-    margin-right: 20px;
-    margin-left: 20px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "deptEdText deptEdImage";
 }
 .deptEdText {
     padding-right: 20px;
+    grid-area: deptEdText;
+    grid-column-start: 1;
 }
 .deptEdImage img {
     width: 100%;
     height: auto;
 }
+.deptEdImage {
+    grid-area: deptEdImage;
+    grid-column-start: 2;
+}
 .allProjectsCenter {
     margin-top: 8px;
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 30px;
 }
 footer {
         background-color: #afabcb;
@@ -129,16 +138,38 @@ button {
     }
 }
 @media only screen and (max-width: 600px) {
-    .wellRead {
-        display: grid;
-        grid-template-areas: 
-        "wellReadImage"
-        "wellReadText"
-    }
-    .deptEd {
-        display: grid;
-        grid-template-areas: 
-        "deptEdImage"
-        "deptEdText"
-    }
+        .wellRead {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            margin: auto;
+            grid-template-areas: 
+            "wellReadImage"
+            "wellReadText";
+        }
+        .wellReadImage {
+            grid-area: wellReadImage;
+            grid-row-start: 1;
+        }
+        .wellReadText {
+            grid-area: wellReadText;
+            grid-row-end: 2;
+        }
+        .deptEd {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            margin: auto;
+            grid-template-areas: 
+            "deptEdImage"
+            "deptEdText";
+        }
+        .deptEdImage {
+            grid-area: deptEdImage;
+            grid-row-start: 1;
+        }
+        .deptEdText {
+            grid-area: deptEdText;
+            grid-row-end: 2;
+        }
 }
